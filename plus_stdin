@@ -2,5 +2,9 @@
 import sys
 x = 0.0
 for line in sys.stdin:
-   x += float(line)
+   try:
+      x += float(line)
+   except ValueeError:
+      x += float(line)
+
 print(x)
